@@ -401,6 +401,12 @@
     }
 
     document.getElementById('drawBtn').addEventListener('click', flipReveal);
+
+    // === อัปเดตรูปเฉพาะใบ: Nine of Wands ===
+    const nineWands = CARDS.find(c => c.name_en === 'Nine of Wands');
+    if (nineWands) {
+      nineWands.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tarot_Nine_of_Wands.jpg/250px-Tarot_Nine_of_Wands.jpg';
+    }
   </script>
 </body>
 </html>
